@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #08080a;
+  --color-surface-elevated: #0f0f13;
+  --color-surface-overlay: #15151b;
+  --color-surface-hover: #1c1c24;
+  --color-surface-active: #23232d;
+
+  --color-border: #23232b;
+  --color-border-light: #2d2d38;
+  --color-border-accent: rgba(245, 158, 11, 0.18);
+
+  --color-accent: #f59e0b;
+  --color-accent-hover: #fbbf24;
+  --color-accent-muted: rgba(245, 158, 11, 0.1);
+  --color-accent-glow: rgba(245, 158, 11, 0.16);
+
+  --color-text-primary: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+  --color-text-subtle: #52525b;
+
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #3b82f6;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --radius-card: 0.875rem;
+  --radius-sm: 0.5rem;
+  --radius-pill: 9999px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2d2d38 transparent;
+}
+
+*::selection {
+  background: rgba(245, 158, 11, 0.25);
+  color: #fff;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+/* Thin, modern focus ring */
+*:focus-visible {
+  outline: 2px solid rgba(245, 158, 11, 0.5);
+  outline-offset: 2px;
+}
